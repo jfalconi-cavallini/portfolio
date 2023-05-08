@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(105, 169, 182, 0.75),rgba(1, 13, 249, 0.75)), url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 70px;
+    width: auto;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none; /* gets rid of bullet points */
+    display: inline-block; /* displays items next to each other */
+    position: relative; /* need this for effect to work or it shows up elsewhere */
+}
+
+.navbar ul li a{
+    text-decoration: none; /* gets rid of underline */
+    color: black;
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    text-align: center;   
+}
+.content img{
+    max-width: 20%;
+}
+
+/* add effect when clicking on different pages */
+
+
+/*
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 60px;
+    position: relative;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+.content {
+    width: 100%;
+    text-align: center;   
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 20%;
+        
+}
+
+*/
