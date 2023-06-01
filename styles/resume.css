@@ -13,6 +13,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .navbar{
@@ -56,4 +57,13 @@ body {
 
 .navbar ul li:hover::after{
     width: 100%;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
 }

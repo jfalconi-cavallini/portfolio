@@ -13,6 +13,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .navbar{
@@ -57,3 +58,58 @@ body {
 .navbar ul li:hover::after{
     width: 100%;
 }
+
+.content {
+    width: 100%;
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/*
+.text-container{
+    flex: 1;
+    margin-left: 20px;
+    
+    
+}
+.text-box{
+    margin-top: 40px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    border-radius: 5px;
+    line-height: 1.4;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.image-container{
+    flex: 1;
+    margin-right: 20px;
+    
+}
+
+.profile-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.welcome-heading{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 64px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.portfolio-heading {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: right;
+    margin-right: 20px;
+}
+*/
